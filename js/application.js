@@ -3,29 +3,36 @@ $(document).ready(function(){
   var bg = new Image();
   $(bg).one("load", function() {
     $("#background").animate({"opacity":"0.8"},2000)
+    $(".bar").animate({"height":"100px"},666)
   }).attr("src", "./sriracha.gif");
 
-    $("body").animate({"border-width":"100px","height":"-=200px"},700)
     setTimeout(function(){
       $("#container").animate({"opacity":"1"},1500)
     },500)
 
     $("#asgift").click(function(){
-      $("body").animate({"border-width":"0px","height":"+=200px"},200)
       $("#container").hide();
-      $("#gift").fadeIn();
+      $("#gift").show();
+      $("#gift").animate({"margin-top":"10px","opacity":"1"},300);
+      $(".bar").animate({"height":"0px"},300)
+
     })
     $("#foryou").click(function(){
-      $("body").animate({"border-width":"0px","height":"+=200px"},200)
       $("#container").hide();
-      $("#yourself").fadeIn();
+      $("#yourself").show();
+      $("#yourself").animate({"margin-top":"10px","opacity":"1"},300);
+      $(".bar").animate({"height":"0px"},300)
+
     })
 
     $(".back").click(function(){
-      $("body").animate({"border-width":"100px","height":"-=200px"},700)
-      $("#container").fadeIn('slow');
-      $(".sales").hide();
+      setTimeout(function(){
+        $(".sales").hide();
+        $("#container").fadeIn('slow');
+      },299)
+      $(".sales").animate({"margin-top":"500px","opacity":"0"},300);
+      $(".bar").animate({"height":"100px"},300)
+      
     })
-
 
 })

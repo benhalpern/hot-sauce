@@ -28,21 +28,17 @@ $helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Hel
 
 body{
   margin:0;
-  border-top:0px solid black;
-  border-bottom:0px solid black;
   font-family:$base;
   color:black;
-  height:calc(100%);
-
   #background{
     background:black;
-    background: url(./sriracha.gif) no-repeat top center fixed;
+    background: url(./sriracha.gif) no-repeat bottom center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width:100%;
-    height:140%;
+    height:100%;
     position:fixed;
     opacity:0;
     z-index:-10;
@@ -52,9 +48,23 @@ body{
 
   }
 
-  #container{
+  .bar{
+    position:fixed;
+    height:0px;
+    background:black;
+    opacity:1;
+    z-index:20;
+    width:100%;
+    &#topbar{
+      top:0;
+    }
+    &#bottombar{
+      bottom:0;
+    }
+  }
 
-    margin-top:40px;
+  #container{
+    margin-top:120px;
     width:800px;
     margin-left:auto;margin-right:auto;
     text-align:center;
@@ -65,30 +75,30 @@ body{
 
     }
     h1{
-      font-size:5.5em;
+      font-size:5.2em;
       margin:0;
       margin-top:20px;
     }
     h2{
-      font-size:2.3em;
+      font-size:2.1em;
       margin:0;
 
     }
 
     #action{
       button{
-        font-size:3em;
-        padding:10px;
-        width:270px;
+        font-size:2.9em;
+        padding:0px;
+        width:230px;
         margin:20px;
         border:0px solid white;
-        background:rgba(255,255,255,0.7);
-        border-bottom:8px solid black;
+        background:rgba(255,255,255,0);
+        border-bottom:12px solid black;
         font-family:"hand2";
         cursor:pointer;
         &:hover{
-          background:white;
-          border-bottom:8px solid lighten($maroon,14%);
+          background:rgba(255,255,255,0.4);
+          border-bottom:12px solid lighten($maroon,14%);
         }
       }
     }
@@ -100,20 +110,19 @@ body{
     padding:50px 120px 50px 120px;
     margin-left:auto;
     margin-right:auto;
-    margin-top:10px;
+    margin-top:500px;
     margin-bottom:10px;
     background:white;
     font-family:$helvetica;
     font-size:17px;
     line-height:120%;
-    display:none;
+    opacity:0;
     overflow:scroll;
     box-shadow:0px 0px 50px 10px black;
     border-top:18px solid $maroon;
     border-bottom:18px solid $maroon;
-
     position:relative;
-
+    display:none;
     .back{
       position:absolute;
       top:0px;
@@ -196,7 +205,7 @@ body{
 
 //media queries and such
 
-@media screen and (min-height: 751px) {
+@media screen and (min-height: 761px) {
   #logo{
     width:300px !important;
     height:300px !important;
@@ -210,29 +219,28 @@ body{
 
 }
 
-@media screen and (max-height: 750px) {
+@media screen and (max-height: 760px) {
   #logo{
-    width:220px !important;
-    height:220px !important;
+    width:270px !important;
+    height:270px !important;
   }
   #action{
     button{
-      font-size:2.8em !important;
-      padding:8px !important;
+      font-size:2.76em !important;
     }
   }
 
 }
 @media screen and (max-height: 700px) {
   #logo{
-    width:200px !important;
-    height:200px !important;
-    margin-top:-20px !important;
+    width:210px !important;
+    height:210px !important;
   }
   #action{
     button{
       font-size:2.5em !important;
-      padding:7px !important;
+      margin:13px;
+
     }
   }
 
@@ -241,21 +249,14 @@ body{
   #logo{
     width:190px !important;
     height:190px !important;
-    margin-top:-28px !important;
   }
   #action{
     button{
-      font-size:2em !important;
-      padding:2px !important;
+      font-size:2.1em !important;
     }
   }
 }
 @media screen and (max-width: 480px) {
-  body{
-    border-top:0px !important;
-    border-bottom:0px !important;
-
-  }
   #container{
     width:100% !important;
     h1{
@@ -267,7 +268,6 @@ body{
     #action{
       button{
         font-size:2em !important;
-        padding:2px !important;
       }
     }
   }
