@@ -154,6 +154,8 @@ body{
         background:rgba(255,255,255,0.7);
         font-family:$helvetica;
         cursor:pointer;
+        font-size:20px;
+        font-weight:bold;
       }
       &:hover{
         background:darken($beige,7%);
