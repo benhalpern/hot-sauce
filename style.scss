@@ -18,6 +18,7 @@
 
 $beige:#CFC3A9;
 $maroon: #631313;
+$light-gray: #D6D6D6;
 $base: "base","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
@@ -83,6 +84,69 @@ body{
         &:hover{
           background:white;
           border-bottom:8px solid lighten($maroon,14%);
+        }
+      }
+    }
+
+  }
+
+  .sales{
+    width:800px;
+    padding:50px 120px 50px 120px;
+    margin-left:auto;
+    margin-right:auto;
+    background:white;
+    font-family:$helvetica;
+    font-size:17px;
+    line-height:120%;
+    display:none;
+    overflow:scroll;
+    box-shadow:0px 0px 50px 10px black;
+    //border-left:22px solid black;
+    //border-right:22px solid black;
+    img{
+      width:100%;
+    }
+
+    h1{
+      font-family:"hand2";
+      font-size:37px;
+      text-align:center;
+    }
+
+    .plan{
+      text-align:center;
+      float:left;
+      width:31%;
+      background:$beige;
+      margin:1%;
+      cursor:pointer;
+      border-radius:2px;
+      margin-bottom:80px;
+      h1{
+        font-size:32px;
+        font-family:"base";
+
+      }
+      h2{
+        font-size:66px;
+        -webkit-transition:all 0.2s, -webkit-transform 0.2s;
+        transition:all 0.2s, transform 0.2s;
+
+      }
+      h3{
+        font-size:22px;
+      }
+      -webkit-transition:all 0.2s, -webkit-transform 0.2s;
+      transition:all 0.2s, transform 0.2s;
+
+      &:hover{
+        background:darken($beige,7%);
+        margin-bottom:60px;
+
+        h2{
+          font-size:77px;
+
         }
       }
     }
