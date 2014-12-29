@@ -24,7 +24,7 @@ $(document).ready(function(){
     $(".back").click(function(){
       $("body").animate({"border-width":"100px","height":"-=200px"},700)
       $("#container").fadeIn('slow');
-      $("#yourself,#gift").hide();
+      $(".sales").hide();
     })
 
 
