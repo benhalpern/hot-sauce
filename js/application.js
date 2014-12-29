@@ -5,8 +5,9 @@ $(document).ready(function(){
     $("#background").animate({"opacity":"0.8"},2000)
   }).attr("src", "./sriracha.gif");
 
-    $("#logo").animate({"opacity":"0.8"},3000)
-    $("body").animate({"border-width":"100px"},1800)
-    $("#container").animate({"margin-left":"+=300px"},1800)
+    $("body").animate({"border-width":"100px"},1200)
+    setTimeout(function(){
+      $("#container").animate({"margin-left":"+=300px","opacity":"1"},1700)
+    },300)
 
 })
