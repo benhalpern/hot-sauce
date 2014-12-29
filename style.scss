@@ -14,6 +14,10 @@
   font-family: "hand2";
   src: url(./hand2.ttf) format("truetype");
 }
+@font-face {
+  font-family: "scratchy";
+  src: url(./PWScratchy.ttf) format("truetype");
+}
 
 
 $beige:#CFC3A9;
@@ -32,18 +36,19 @@ body{
 
   #background{
     background:black;
-    background: url(./sriracha.gif) no-repeat center center fixed;
+    background: url(./sriracha.gif) no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width:100%;
-    height:100%;
+    height:140%;
     position:fixed;
     opacity:0;
     z-index:-10;
     padding:0;
     margin:0;
+    top:0;
 
   }
 
@@ -78,7 +83,7 @@ body{
         margin:20px;
         border:0px solid white;
         background:rgba(255,255,255,0.7);
-        border-bottom:8px solid $maroon;
+        border-bottom:8px solid black;
         font-family:"hand2";
         cursor:pointer;
         &:hover{
@@ -102,16 +107,17 @@ body{
     display:none;
     overflow:scroll;
     box-shadow:0px 0px 50px 10px black;
-    //border-left:22px solid black;
-    //border-right:22px solid black;
+    border-top:10px solid $maroon;
+    border-bottom:10px solid $maroon;
     img{
       width:100%;
     }
 
     h1{
       font-family:"hand2";
-      font-size:37px;
+      font-size:42px;
       text-align:center;
+      margin-bottom:30px;
     }
 
     .plan{
@@ -124,32 +130,82 @@ body{
       border-radius:2px;
       margin-bottom:80px;
       h1{
-        font-size:32px;
+        font-size:40px;
         font-family:"base";
-
       }
       h2{
-        font-size:66px;
-        -webkit-transition:all 0.2s, -webkit-transform 0.2s;
-        transition:all 0.2s, transform 0.2s;
-
+        font-size:77px;
+        font-family:"scratchy";
+        margin-top:-8px;
+        color:$maroon;
+        -webkit-transition:all 0.1s, -webkit-transform 0.1s;
+        transition:all 0.1s, transform 0.1s;
       }
       h3{
-        font-size:22px;
+        font-size:32px;
       }
-      -webkit-transition:all 0.2s, -webkit-transform 0.2s;
-      transition:all 0.2s, transform 0.2s;
-
+      -webkit-transition:all 0.1s, -webkit-transform 0.1s;
+      transition:all 0.1s, transform 0.1s;
+      button{
+        font-size:2em;
+        padding:10px 30px 10px 30px;
+        margin-bottom:10px;
+        border:0px solid white;
+        background:rgba(255,255,255,0.7);
+        font-family:$helvetica;
+        cursor:pointer;
+      }
       &:hover{
         background:darken($beige,7%);
         margin-bottom:60px;
 
         h2{
-          font-size:77px;
+          font-size:88px;
 
         }
       }
     }
 
+  }
+
+}
+@media screen and (max-height: 750px) {
+  #logo{
+    width:220px !important;
+    height:220px !important;
+  }
+  #action{
+    button{
+      font-size:2.8em !important;
+      padding:8px !important;
+    }
+  }
+
+}
+@media screen and (max-height: 700px) {
+  #logo{
+    width:200px !important;
+    height:200px !important;
+    margin-top:-20px !important;
+  }
+  #action{
+    button{
+      font-size:2.5em !important;
+      padding:7px !important;
+    }
+  }
+
+}
+@media screen and (max-height: 650px) {
+  #logo{
+    width:190px !important;
+    height:190px !important;
+    margin-top:-28px !important;
+  }
+  #action{
+    button{
+      font-size:2em !important;
+      padding:2px !important;
+    }
   }
 }
