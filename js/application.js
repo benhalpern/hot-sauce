@@ -13,14 +13,14 @@ $(document).ready(function(){
     $("#asgift").click(function(){
       $("#container").hide();
       $("#gift").show();
-      $("#gift").animate({"margin-top":"10px","opacity":"1"},300);
+      $("#gift").animate({"margin-top":"15px","opacity":"1"},300);
       $(".bar").animate({"height":"0px"},300)
 
     })
     $("#foryou").click(function(){
       $("#container").hide();
       $("#yourself").show();
-      $("#yourself").animate({"margin-top":"10px","opacity":"1"},300);
+      $("#yourself").animate({"margin-top":"15px","opacity":"1"},300);
       $(".bar").animate({"height":"0px"},300)
 
     })
@@ -32,7 +32,7 @@ $(document).ready(function(){
       },299)
       $(".sales").animate({"margin-top":"500px","opacity":"0"},300);
       $(".bar").animate({"height":"100px"},300)
-      
+
     })
 
 })
