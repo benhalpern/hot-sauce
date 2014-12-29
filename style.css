@@ -151,5 +151,29 @@ body {
   #action button {
     font-size: 2em !important;
     padding: 2px !important; } }
+@media screen and (max-width: 480px) {
+  body {
+    border-top: 0px !important;
+    border-bottom: 0px !important; }
+
+  #container {
+    width: 100% !important; }
+    #container h1 {
+      font-size: 40px !important; }
+    #container h2 {
+      font-size: 20px !important; }
+    #container #action button {
+      font-size: 2em !important;
+      padding: 2px !important; }
+
+  .sales {
+    width: calc(100% - 30px) !important;
+    padding: 15px !important; }
+    .sales h1 {
+      font-size: 18px !important; }
+    .sales .plan {
+      width: 100% !important; }
+      .sales .plan h1 {
+        font-size: 48px !important; } }
 
 /*# sourceMappingURL=style.css.map */
