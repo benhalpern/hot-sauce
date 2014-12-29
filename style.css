@@ -77,8 +77,8 @@ body {
     display: none;
     overflow: scroll;
     box-shadow: 0px 0px 50px 10px black;
-    border-top: 10px solid #631313;
-    border-bottom: 10px solid #631313; }
+    border-top: 18px solid #631313;
+    border-bottom: 18px solid #631313; }
     body .sales img {
       width: 100%; }
     body .sales h1 {
