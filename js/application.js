@@ -13,12 +13,12 @@ $(document).ready(function(){
     $("#asgift").click(function(){
       $("body").animate({"border-width":"0px","height":"+=200px"},200)
       $("#container").hide();
-      $("#gift").fadeIn('slow');
+      $("#gift").fadeIn();
     })
     $("#foryou").click(function(){
       $("body").animate({"border-width":"0px","height":"+=200px"},200)
       $("#container").hide();
-      $("#yourself").fadeIn('slow');
+      $("#yourself").fadeIn();
     })
 
     $(".back").click(function(){
