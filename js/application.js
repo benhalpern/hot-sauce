@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     $("body").animate({"border-width":"100px"},700)
     setTimeout(function(){
-      $("#container").animate({"margin-left":"+=300px","opacity":"1"},1400)
+      $("#container").animate({"opacity":"1"},1900)
     },300)
 
 })
