@@ -100,6 +100,8 @@ body{
     padding:50px 120px 50px 120px;
     margin-left:auto;
     margin-right:auto;
+    margin-top:10px;
+    margin-bottom:10px;
     background:white;
     font-family:$helvetica;
     font-size:17px;
@@ -138,14 +140,14 @@ body{
         font-family:"scratchy";
         margin-top:-8px;
         color:$maroon;
-        -webkit-transition:all 0.1s, -webkit-transform 0.1s;
-        transition:all 0.1s, transform 0.1s;
+        -webkit-transition:all 0.088s, -webkit-transform 0.088s;
+        transition:all 0.088s, transform 0.088s;
       }
       h3{
         font-size:32px;
       }
-      -webkit-transition:all 0.1s, -webkit-transform 0.1s;
-      transition:all 0.1s, transform 0.1s;
+      -webkit-transition:all 0.088s, -webkit-transform 0.088s;
+      transition:all 0.088s, transform 0.088s;
       button{
         font-size:2em;
         padding:10px 30px 10px 30px;
@@ -243,6 +245,26 @@ body{
       h1{
         font-size:48px !important;
       }
+      margin:0% !important;
+      margin-bottom:20px !important;
+      h2{
+        font-size:100px !important;
+        -webkit-transition:all 0.0s, -webkit-transform 0.0s !important;
+        transition:all 0.0s, transform 0.0s !important;
+
+
+      }
+
+
+      &:hover{
+        margin-bottom:20px !important;
+
+        h2{
+          font-size:100px !important;
+
+        }
+      }
+
 
     }
   }

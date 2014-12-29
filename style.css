@@ -70,6 +70,8 @@ body {
     padding: 50px 120px 50px 120px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background: white;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 17px;
@@ -95,8 +97,8 @@ body {
       cursor: pointer;
       border-radius: 2px;
       margin-bottom: 80px;
-      -webkit-transition: all 0.1s, -webkit-transform 0.1s;
-      transition: all 0.1s, transform 0.1s; }
+      -webkit-transition: all 0.088s, -webkit-transform 0.088s;
+      transition: all 0.088s, transform 0.088s; }
       body .sales .plan h1 {
         font-size: 40px;
         font-family: "base"; }
@@ -105,8 +107,8 @@ body {
         font-family: "scratchy";
         margin-top: -8px;
         color: #631313;
-        -webkit-transition: all 0.1s, -webkit-transform 0.1s;
-        transition: all 0.1s, transform 0.1s; }
+        -webkit-transition: all 0.088s, -webkit-transform 0.088s;
+        transition: all 0.088s, transform 0.088s; }
       body .sales .plan h3 {
         font-size: 32px; }
       body .sales .plan button {
@@ -172,8 +174,18 @@ body {
     .sales h1 {
       font-size: 18px !important; }
     .sales .plan {
-      width: 100% !important; }
+      width: 100% !important;
+      margin: 0% !important;
+      margin-bottom: 20px !important; }
       .sales .plan h1 {
-        font-size: 48px !important; } }
+        font-size: 48px !important; }
+      .sales .plan h2 {
+        font-size: 100px !important;
+        -webkit-transition: all 0.0s, -webkit-transform 0.0s !important;
+        transition: all 0.0s, transform 0.0s !important; }
+      .sales .plan:hover {
+        margin-bottom: 20px !important; }
+        .sales .plan:hover h2 {
+          font-size: 100px !important; } }
 
 /*# sourceMappingURL=style.css.map */
